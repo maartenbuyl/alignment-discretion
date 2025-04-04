@@ -1,0 +1,10 @@
+Uploading the preference of reward models. Currently, all used Mistral and LLama.
+
+pku_splited = "PKU-Alignment/PKU-SafeRLHF"
+pku = "PKU-Alignment/PKU-SafeRLHF-single-dimension"
+All models in pku were trained in pku = "PKU-Alignment/PKU-SafeRLHF-single-dimension"
+
+OBS:
+1. reward_a is always the reward of the completion chosen by the user. E.g., ``chosen'' in HH-RLHF and ``better_response_id'' for both pku and pku_spplited.
+2. reward_b is the reward of the rejected. 
+3. The cols in the datasets evaluated in pku_spplited dataset ``better_response_id'' and 	``safer_response_id'' are direct extracted from pku_spplited. Hence, ``better_response_id'' is always the ``a''  
